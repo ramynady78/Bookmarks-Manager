@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #525252;
+    
+
+}
+
+h1{
+    background-color: #414141;
+    max-width: 900px;
+    color: white;
+    margin: 10px auto 0;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.containar{
+    max-width: 900px;
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    /* border: 4px solid black; */
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    
+}
+
+.containar form{
+    background-color: #414141; 
+    /* #008c75 */
+    padding: 15px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+
+}
+.containar form h2{
+   margin: 0 0 15px;
+   background-color: #313131;
+   width: 100%;
+   padding: 10px;
+   border-radius: 6px;
+   color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    background-color: #FAEED1;
+
+}
+ input:focus{
+    outline: none;
+    border: 1px solid #aaa;
+}
+.containar .category-suggestions{
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+.containar .category-suggestions h4{
+    margin: 0 0 10px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: #FAEED1;
+}
+
+.containar .category-suggestions div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.containar .category-suggestions div span{
+    font-weight: bold;
+    color: #313131;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #CCC8AA;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+.containar .category-suggestions div span:hover,
+.containar .category-suggestions div span:active{
+    color: rgb(167 19 39);
+}
+.containar form button{
+    width: 200px;
+    margin: 10px auto;
+    border: none;
+    background-color: #2a892a;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    color: #FAEED1;
+}
+.containar form button:hover{
+    background-color: rgb(18, 188, 18);
+    opacity: .9;
+}
+
+.all{
+  max-width: 900px;
+  margin: 15px auto;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+  color: white;
+  
+}
+.all:hover{
+    color: rgb(247, 133, 133);
+}
+
+.category-buttons{
+    max-width: 900px;
+    margin: 5px auto;
+    background-color: #414141;
+    text-align: center;
+    padding: 10px 10px 25px 10px;
+    border-radius: 6px;
+}
+
+.category-buttons h4{
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.8;
+    color: white;
+    
+}
+.containar .category-buttons.category-buttons div {
+    margin-top: 10px;
+}
+.containar .category-buttons.category-buttons div span{
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0 5px;
+    background-color: white;
+    padding: 10px;;
+    border-radius: 6px;
+
+}
+.containar .category-buttons div span:hover,
+.containar .category-buttons div span.active{
+    background-color: rgb(223, 110, 110);
+}
+
+.bookmarks{
+
+}
+.bookmarks > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #3C3D37;
+    color: #FAEED1;
+}
+
+.bookmarks div .link  {
+    flex: 1;
+}
+.bookmarks div .link a {
+    text-decoration: none;
+    color: #FAEED1;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+.bookmarks div .link a:hover{
+    color: #f44336;
+}
+.bookmarks .cat{
+    width: 100px;
+    background-color: #181C14;
+    border: 2px solid #FAEED1;
+    color: #FAEED1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-right: 20px;
+
+}
+
+.bookmarks .number{
+    width: 50px;
+    height: 50px;
+    background-color: #181C14;
+    border: 2px solid #FAEED1;
+    color: #FAEED1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.bookmarks button.delete{
+    cursor: pointer;
+    width: 100px;
+    padding: 11px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #A91D3A;
+    transition: .3s;
+    color: #FAEED1;
+}
+.bookmarks button.delete:hover{
+    background-color: #f44336;
+}
+.bookmarks button.edit{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: .3s;
+    background-color: transparent;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #FAEED1;
+}
+.bookmarks button.edit:hover{
+    background-color: #181C14;
+    border: 2px solid #FAEED1;
+}
+
+div.edit-bookmarks {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+    transition: .5s;
+}
+
+div.edit-bookmarks div:not(.category-sugges){
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #B4B4B3;
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 205px);
+    border-radius: 6px;
+    transition: .5s;
+}
+div.edit-bookmarks h4{
+    margin: 5px auto;
+    font-weight: normal;
+    text-align: center;
+}
+.category-sugges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.category-sugges span{
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    transition: .3s;
+    background-color: #ddd;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+.category-sugges  span:hover{
+    background-color: #eee;
+}
+
+div.edit-bookmarks div button{
+    border:none;
+    cursor: pointer;
+    width: 70px;
+    padding: 10px;
+    font-weight: bold;
+    margin:20px 10px 0;
+    border-radius: 6px;
+    transition: .3s;
+    color: white;
+    
+}
+div.edit-bookmarks div button:hover{
+    opacity: 0.7;
+}
+div.edit-bookmarks div  .cancle-editing{
+    margin-left: calc(100% - (180px));
+    background-color: #A91D3A;
+    transition: .3s;
+
+}
+div.edit-bookmarks div  .cancle-editing:hover{
+    background-color: #f44336;
+}
+div.edit-bookmarks div .save-editing{
+    background-color: rgb(27, 202, 27);
+}
+
+
+footer{
+    height: 50px;
+    max-width: 900px;
+    margin: 0 auto 5px;
+    position: absolute;
+    left: calc(50% - 90px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    /* color: #fff; */
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:0.3s;
+    padding: 20px;
+    background-color: white;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+.vk {
+    color: #4C75A3;
+    border: 2px solid #4C75A3;
+
+}
+
+.telegram {
+    color: #0088cc;
+    border: 2px solid #0088cc;
+}
+
+.github {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.facebook {
+    color: #1877F2;
+    border: 2px solid #1877F2;
+}
+
+.instagram {
+    color: #E1306C;
+    border: 2px solid #E1306C;
+}

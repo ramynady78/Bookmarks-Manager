@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks Mananger</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <h1>Bookmarks Mananger Application</h1>
+    <div class="containar">
+        <form >
+            <h2>Add New Bookmarks</h2>
+            <input type="text" class="title" placeholder="Bookmarks Name">
+            <input type="url" class="url" placeholder="URL">
+            <div class="category-suggestions">
+                <h4>Choose From Category list or add New</h4>
+                <div>
+               
+                </div>
+            </div>
+            <input type="text" class="category" placeholder="New Category Name">
+            <button type="button" onclick="saveBookMark()">Add Bookmark</button>
+        </form>
+        <h2 class="all"> Show All Bookmarks</h2>
+        <div class="category-buttons">
+            <h4>Filter Bookmarks By Add Category</h4>
+            <div>
+               
+            </div>
+
+        </div>
+        <div class="bookmarks"></div>
+    </div>
+
+    <div class="edit-bookmarks">
+       <div>
+        <input type="text" class="title" placeholder="Bookmarks Name">
+        <input type="url" class="url" placeholder="URL">
+        <input type="text" class="category" placeholder="New Category Name">
+        <h4>Category Suggestions</h4>
+        <div class="category-sugges"></div>
+        <button class="cancle-editing">Cancle</button>
+        <button class="save-editing">Save</button>
+       </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://vk.com/id704406318" class="vk" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="https://t.me/ramynady8" class="telegram" target="_blank" ><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://github.com/ramynady78" class="github" target="_blank" ><i class="fab fa-github"></i></a>
+            <!-- <a href="" class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="instagram" target="_blank" ><i class="fab fa-instagram"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
